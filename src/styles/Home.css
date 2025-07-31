@@ -1,0 +1,124 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  color: rgb(253, 254, 255);
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.home-content {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #FF9800;
+  transition: color 0.3s ease;
+}
+
+.home-title:hover, .home-title-medium:hover {
+  color: white;
+}
+
+
+.home-title-medium {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FF9800;
+  transition: color 0.3s ease;
+}
+
+
+.home-subtitle {
+  max-width: 600px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.home-subtitle:hover {
+  color: #FF9800;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, rgb(155 173 207) 0%, rgb(76 88 108) 100%);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background: linear-gradient(135deg, rgb(102, 139, 170) 0%, rgb(157, 194, 194) 100%);
+}
+
+.home-image-container {
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: auto;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-image-container {
+    top: 180%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 8rem;
+  }
+
+  .home-subtitle {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-container {
+    padding: 100px 20px;
+  }
+
+
+  .home-title-medium{
+    font-size: 2rem;
+  }
+  
+}

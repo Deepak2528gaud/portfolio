@@ -1,0 +1,63 @@
+.button-wrapper {
+  position: relative;
+}
+
+.button {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: white;
+}
+
+.button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg,
+    #ff8038 0%,
+    #ff0099 30.43%,
+    #00ebeb 68.23%,
+    #db00ff 100%
+  );
+  background-size: 600% 600%;
+  border-radius: 50px;
+  animation: AnimateBorder 4s ease infinite;
+  z-index: 0;
+  transform: translate(-2px, -2px);
+  transition: filter 0.4s ease-in;
+}
+
+.button-wrapper:hover .button-bg {
+  filter: blur(10px);
+}
+
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
